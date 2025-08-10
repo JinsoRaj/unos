@@ -242,3 +242,19 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt": "Role","filters": [
+            ["_user_tags", "like", "%unos%"]
+        ]},             # Custom roles  created
+    {"dt": "Custom DocPerm"},  # Custom permission rules  added
+    {"dt": "Custom Field","filters": [
+            ["_user_tags", "like", "%unos%"]
+        ]},     # Custom fields added to any DocType
+    {"dt": "Property Setter","filters": [
+            ["_user_tags", "like", "%unos%"]
+        ]
+      },  # Field/DocType property overrides like hidden fields
+    {"dt" :"Activity Type","filters": [
+            ["_user_tags", "like", "%unos%"]
+        ]}     # Any data records from this doctype, if relevant
+]

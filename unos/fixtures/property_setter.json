@@ -1,0 +1,36 @@
+[
+ {
+  "_user_tags": ",unos",
+  "default_value": null,
+  "doc_type": "Timesheet",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "customer",
+  "is_system_generated": 0,
+  "modified": "2025-08-11 00:59:26.317691",
+  "module": null,
+  "name": "Timesheet-customer-hidden",
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "_user_tags": ",unos",
+  "default_value": null,
+  "doc_type": "Timesheet",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "billing_details",
+  "is_system_generated": 0,
+  "modified": "2025-08-11 00:59:44.422725",
+  "module": null,
+  "name": "Timesheet-billing_details-hidden",
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ }
+]
