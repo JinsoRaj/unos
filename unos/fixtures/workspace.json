@@ -1,8 +1,30 @@
 [
  {
   "_user_tags": ",unos",
-  "charts": [],
-  "content": "[{\"id\":\"_sZ8WoyQL3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Doctor Board</span>\",\"col\":12}},{\"id\":\"W_bxxyaP2n\",\"type\":\"card\",\"data\":{\"card_name\":\"Appointments\",\"col\":4}}]",
+  "charts": [
+   {
+    "chart_name": "Patient Appointments",
+    "label": "Patient Appointments",
+    "parent": "Doctor Board",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   },
+   {
+    "chart_name": "Department wise Patient Appointments",
+    "label": "Department wise Patient Appointments",
+    "parent": "Doctor Board",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   },
+   {
+    "chart_name": "In-Patient Status",
+    "label": "In-Patient Status",
+    "parent": "Doctor Board",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   }
+  ],
+  "content": "[{\"id\":\"_sZ8WoyQL3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Doctor Board</span>\",\"col\":12}},{\"id\":\"W_bxxyaP2n\",\"type\":\"card\",\"data\":{\"card_name\":\"Patient - Appointments\",\"col\":4}},{\"id\":\"eZUoCKSINd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":3}},{\"id\":\"okDlOv7Lw4\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"lNxC-3TTfN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Patients\",\"col\":3}},{\"id\":\"pjap8_3vDI\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Patients Admitted\",\"col\":3}},{\"id\":\"cYWJ8KCRwD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Appointments\",\"col\":3}},{\"id\":\"soIPWOcx4l\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Patient Appointments\",\"col\":12}},{\"id\":\"_31sWKLlMz\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Department wise Patient Appointments\",\"col\":12}},{\"id\":\"PPugM3BqgG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"In-Patient Status\",\"col\":12}}]",
   "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
@@ -19,8 +41,8 @@
     "hidden": 0,
     "icon": null,
     "is_query_report": 0,
-    "label": "Appointments",
-    "link_count": 1,
+    "label": "Patient - Appointments",
+    "link_count": 2,
     "link_to": null,
     "link_type": "DocType",
     "onboard": 0,
@@ -30,6 +52,24 @@
     "parenttype": "Workspace",
     "report_ref_doctype": null,
     "type": "Card Break"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Patient",
+    "link_count": 0,
+    "link_to": "Patient",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Doctor Board",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Link"
    },
    {
     "dependencies": null,
@@ -50,10 +90,32 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-08-13 12:17:05.369364",
+  "modified": "2025-08-13 17:17:39.028159",
   "module": "",
   "name": "Doctor Board",
-  "number_cards": [],
+  "number_cards": [
+   {
+    "label": "Total Patients",
+    "number_card_name": "Total Patients",
+    "parent": "Doctor Board",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Total Patients Admitted",
+    "number_card_name": "Total Patients Admitted",
+    "parent": "Doctor Board",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Open Appointments",
+    "number_card_name": "Open Appointments",
+    "parent": "Doctor Board",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   }
+  ],
   "parent_page": "",
   "public": 1,
   "quick_lists": [],
@@ -67,7 +129,25 @@
    }
   ],
   "sequence_id": 2.0,
-  "shortcuts": [],
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Dashboard",
+    "link_to": "Healthcare",
+    "parent": "Doctor Board",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "Dashboard",
+    "url": null
+   }
+  ],
   "title": "Doctor Board"
  },
  {
@@ -84,7 +164,7 @@
   "is_hidden": 0,
   "label": "Nurse Board",
   "links": [],
-  "modified": "2025-08-12 23:30:43.709941",
+  "modified": "2025-08-13 17:19:39.320210",
   "module": null,
   "name": "Nurse Board",
   "number_cards": [],
@@ -92,7 +172,14 @@
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": null,
-  "roles": [],
+  "roles": [
+   {
+    "parent": "Nurse Board",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Nursing User"
+   }
+  ],
   "sequence_id": 4.0,
   "shortcuts": [
    {
