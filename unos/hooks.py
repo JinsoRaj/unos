@@ -256,5 +256,8 @@ fixtures = [
       },  # Field/DocType property overrides like hidden fields
     {"dt" :"Activity Type","filters": [
             ["_user_tags", "like", "%unos%"]
+        ]},
+    {"dt" :"Workspace","filters": [
+            ["_user_tags", "like", "%unos%"]
         ]}     # Any data records from this doctype, if relevant
 ]
