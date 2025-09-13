@@ -1,0 +1,201 @@
+body {
+   background-color: #F9FAFB;
+   color: #222;
+   font-family: "Inter", sans-serif;
+ }
+
+#page-Workspaces{
+   background-color: #F9FAFB;
+}
+
+/* desk sidebar selected color */
+.desk-sidebar .standard-sidebar-item.selected{
+   background-color: #E8F0FE;
+}
+/* full body after header in list view */
+.page-container{
+   background-color: #F9FAFB;
+}
+@media (min-width: 992px) {
+   .container-lg, .container-md, .container-sm, .container {
+     max-width: 1180px;
+   }
+ }
+
+
+/* page header with doctype name - view dorpdowns add buttons div */
+.page-head{
+   background-color: #F9FAFB;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+/* filter search div above listing */
+.page-form{
+ padding: 20px;
+}
+
+.content.page-container.editable-form{
+   background-color: #F9FAFB;
+}
+
+.std-form-layout > .form-layout > .form-page{
+   background-color: #ffffff;
+}
+
+/* navbar of frappe   */
+ .navbar {
+   background-color: #ffffff;
+   color: #D5E5FD;
+   height: 63px;
+ }
+ .navbar .container{
+   max-width: 1400px;
+ }
+  
+ .btn-primary {
+   background-color: #0B46EA;
+   border-color: #005cbf;
+ }
+
+
+ .btn.btn-default{
+   background-color: #D5E5FD;
+   border-color: #c1d0e7;
+ }
+
+ /* list view button */
+ .btn.btn-default.btn-sm.ellipsis {
+   background-color: #D5E5FD;
+   border-color: #c4d6e8;
+   color: #eaecee;
+ }
+
+ /* doctype secondary button */
+ .btn.btn-default.ellipsis {
+   background-color: #2563EB;
+   border-color: #005cbf;
+   color: white;
+ }
+
+ .custom-btn-group-label{
+   color: white;
+ }
+
+ .icon.icon-sm{
+   fill: rgb(250, 251, 251);
+}
+
+.form-tabs-list .form-tabs {
+   justify-content: space-around;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+/* #patient-__details-tab{
+   color: #0B46EA;
+} */
+
+/* active header link of tab */
+.form-tabs-list .form-tabs .nav-item  .nav-link.active{
+   color: #0B46EA;
+}
+
+.form-tabs-list .form-tabs .nav-item  .nav-link{
+   color: #6B7280;
+}
+
+/* filtering area input box */
+.input-with-feedback.form-control.input-xs {
+   border: 1px solid #D1D5DB;
+   height: 25px;
+ }
+
+/* form input text input */
+.input-with-feedback.form-control {
+   border: 2px solid #D1D5DB;
+   height: 50px;
+ }
+ .input-with-feedback.form-control:focus {
+   border: 2px solid #007AFF;
+ }
+
+
+
+
+
+ /* //// */
+/* Hide the header row completely */
+.list-row-head {
+   background-color: white;
+   margin-bottom: 15px;
+}
+
+/* Transform list containers into cards */
+.list-row-container {
+   background: white;
+   border: 1px solid #e5e7eb;
+   border-radius: 12px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+   margin-bottom: 10px;
+   padding: 15px;
+   transition: all 0.2s ease;
+   position: relative;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.list-row:hover:not(.list-row-head){
+   background-color: white;
+}
+
+.list-row-container:hover {
+   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+   transform: translateY(-1px);
+   background-color: #F9FAFB;
+}
+.list-row:hover:not(.list-row-head):hover{
+   background-color: #F9FAFB;
+}
+
+/* Hide the bottom border */
+.list-row-border {
+   display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+   .list-row-container {
+       padding: 16px;
+   }
+   
+   .list-subject a {
+       font-size: 16px;
+   }
+   
+   .list-row-col:nth-child(4),
+   .list-row-col:nth-child(5),
+   .list-row-col:last-child {
+       margin-left: 62px;
+   }
+   
+   .list-subject .select-like::after {
+       width: 40px;
+       height: 40px;
+   }
+   
+   .level-right {
+       position: static;
+       margin-top: 12px;
+       justify-content: flex-start;
+   }
+}

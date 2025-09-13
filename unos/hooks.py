@@ -259,5 +259,9 @@ fixtures = [
         ]},
     {"dt" :"Workspace","filters": [
             ["_user_tags", "like", "%unos%"]
-        ]}     # Any data records from this doctype, if relevant
+        ]},
+    {"dt" :"Custom HTML Block"}     # Any data records from this doctype, if relevant
 ]
+
+app_include_css = ["/assets/unos/css/theme.css",]
+web_include_css = ["/assets/unos/css/theme.css",]
