@@ -91,9 +91,7 @@ body {
    margin-bottom: 10px;
 }
 
-/* #patient-__details-tab{
-   color: #0B46EA;
-} */
+
 
 /* active header link of tab */
 .form-tabs-list .form-tabs .nav-item  .nav-link.active{
@@ -171,7 +169,6 @@ body {
 
 
 
-
 /* Mobile responsiveness */
 @media (max-width: 768px) {
    .list-row-container {
@@ -199,3 +196,11 @@ body {
        justify-content: flex-start;
    }
 }
+
+
+
+/* hides the first item ( help about navbar menu) */
+li.nav-item.dropdown-help button.btn-reset.nav-link {
+   display: none;
+ }
+ 
