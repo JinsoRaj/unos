@@ -24,15 +24,8 @@
     "parenttype": "Workspace"
    }
   ],
-  "content": "[{\"id\":\"ABnzW-LTfY\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Time and date\",\"col\":12}},{\"id\":\"IkZUPhntew\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"doctor quick actions\",\"col\":12}},{\"id\":\"_sZ8WoyQL3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Doctor Board</span>\",\"col\":12}},{\"id\":\"W_bxxyaP2n\",\"type\":\"card\",\"data\":{\"card_name\":\"Doctor - Shortcuts\",\"col\":4}},{\"id\":\"eZUoCKSINd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":3}},{\"id\":\"okDlOv7Lw4\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"lNxC-3TTfN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Patients\",\"col\":3}},{\"id\":\"pjap8_3vDI\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Patients Admitted\",\"col\":3}},{\"id\":\"cYWJ8KCRwD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Appointments\",\"col\":3}},{\"id\":\"soIPWOcx4l\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Patient Appointments\",\"col\":12}},{\"id\":\"_31sWKLlMz\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Department wise Patient Appointments\",\"col\":12}},{\"id\":\"PPugM3BqgG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"In-Patient Status\",\"col\":12}}]",
+  "content": "[{\"id\":\"ABnzW-LTfY\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Time and date\",\"col\":12}},{\"id\":\"_sZ8WoyQL3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Doctor Board</span>\",\"col\":12}},{\"id\":\"W_bxxyaP2n\",\"type\":\"card\",\"data\":{\"card_name\":\"Doctor - Shortcuts\",\"col\":4}},{\"id\":\"eZUoCKSINd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":3}},{\"id\":\"okDlOv7Lw4\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"lNxC-3TTfN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Patients\",\"col\":3}},{\"id\":\"pjap8_3vDI\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Patients Admitted\",\"col\":3}},{\"id\":\"cYWJ8KCRwD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Appointments\",\"col\":3}},{\"id\":\"soIPWOcx4l\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Patient Appointments\",\"col\":12}},{\"id\":\"_31sWKLlMz\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Department wise Patient Appointments\",\"col\":12}},{\"id\":\"PPugM3BqgG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"In-Patient Status\",\"col\":12}}]",
   "custom_blocks": [
-   {
-    "custom_block_name": "doctor quick actions",
-    "label": "doctor quick actions",
-    "parent": "Doctor Board",
-    "parentfield": "custom_blocks",
-    "parenttype": "Workspace"
-   },
    {
     "custom_block_name": "Time and date",
     "label": "Time and date",
@@ -231,7 +224,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-09-13 20:29:45.596029",
+  "modified": "2025-10-16 22:04:43.727431",
   "module": "",
   "name": "Doctor Board",
   "number_cards": [
@@ -510,7 +503,7 @@
   "is_hidden": 0,
   "label": "Pharmacist Board",
   "links": [],
-  "modified": "2025-08-12 23:30:43.722302",
+  "modified": "2025-10-16 22:04:09.744873",
   "module": null,
   "name": "Pharmacist Board",
   "number_cards": [],
@@ -518,7 +511,14 @@
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": null,
-  "roles": [],
+  "roles": [
+   {
+    "parent": "Pharmacist Board",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Pharmacist"
+   }
+  ],
   "sequence_id": 5.0,
   "shortcuts": [
    {
@@ -544,8 +544,23 @@
  {
   "_user_tags": ",unos",
   "charts": [],
-  "content": "[{\"id\":\"st90x6YAKX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Front Office</span>\",\"col\":12}},{\"id\":\"-ZQWenDdwf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient Appointment\",\"col\":3}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"sRy-BzRFho\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Time and date\",\"col\":12}},{\"id\":\"XqBkzTw5ZP\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"doctor quick actions\",\"col\":12}},{\"id\":\"st90x6YAKX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Front Office</span>\",\"col\":12}},{\"id\":\"-ZQWenDdwf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient Appointment\",\"col\":3}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Time and date",
+    "label": "Time and date",
+    "parent": "Front Office",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   },
+   {
+    "custom_block_name": "doctor quick actions",
+    "label": "doctor quick actions",
+    "parent": "Front Office",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -555,7 +570,7 @@
   "is_hidden": 0,
   "label": "Front Office",
   "links": [],
-  "modified": "2025-08-19 19:52:42.551919",
+  "modified": "2025-10-16 22:05:29.486869",
   "module": null,
   "name": "Front Office",
   "number_cards": [],
