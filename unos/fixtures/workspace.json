@@ -609,7 +609,7 @@
  {
   "_user_tags": ",unos",
   "charts": [],
-  "content": "[{\"id\":\"sRy-BzRFho\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Time and date\",\"col\":12}},{\"id\":\"XqBkzTw5ZP\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"doctor quick actions\",\"col\":12}},{\"id\":\"st90x6YAKX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Front Office</span>\",\"col\":12}},{\"id\":\"-ZQWenDdwf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient Appointment\",\"col\":3}}]",
+  "content": "[{\"id\":\"sRy-BzRFho\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Time and date\",\"col\":12}},{\"id\":\"XqBkzTw5ZP\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"doctor quick actions\",\"col\":12}},{\"id\":\"st90x6YAKX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Front Office</span>\",\"col\":12}},{\"id\":\"-ZQWenDdwf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient Appointment\",\"col\":3}},{\"id\":\"4QRemYpMjg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient List\",\"col\":3}}]",
   "custom_blocks": [
    {
     "custom_block_name": "Time and date",
@@ -635,7 +635,7 @@
   "is_hidden": 0,
   "label": "Front Office",
   "links": [],
-  "modified": "2025-10-16 22:05:29.486869",
+  "modified": "2025-10-18 17:38:05.148759",
   "module": null,
   "name": "Front Office",
   "number_cards": [],
@@ -653,6 +653,23 @@
   ],
   "sequence_id": 3.0,
   "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Patient List",
+    "link_to": "Patient",
+    "parent": "Front Office",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
    {
     "color": "Grey",
     "doc_view": "List",
